@@ -562,29 +562,22 @@ section.service:nth-child(odd) .service__title p {
   font-weight: 300;
 }
 
-/* .web__title h2 {
-  font-size: 4.6rem;
-  line-height: 5rem;
-  font-weight: 700;
-  color: var(--clr-primary);
-  margin-bottom: 5rem;
-}
-
-.web__title p {
-  margin-bottom: 3rem;
-  text-align: justify;
-  max-width: 390.33px;
-} */
-
-.web__image {
+.service__image {
   position: relative;
   justify-self: end;
 }
 
-.web__image img:last-child {
+section.service:nth-child(even) .service__image img:last-child {
   position: absolute;
   top: 0;
   mix-blend-mode: overlay;
+}
+
+section.service:nth-child(odd) .service__image img {
+  width: 100%;
+  display: block;
+  height: auto;
+  max-width: 52rem;
 }
 
 section.service:nth-child(odd) .price p {
@@ -607,22 +600,6 @@ section.service:nth-child(odd) .price p {
   font-style: italic;
 }
 
-/* .web__price p:first-child {
-  margin-top: 6rem;
-  margin-bottom: 0;
-}
-
-.web__price span {
-  color: var(--clr-primary);
-  font-weight: 600;
-  font-size: 2.7rem;
-}
-
-.web__price p:last-child {
-  font-size: 0.9rem;
-  font-style: italic;
-} */
-
 .graphics {
   padding: 11rem 0 6rem 0;
   background-color: var(--clr-dark);
@@ -634,53 +611,6 @@ section.service:nth-child(odd) .price p {
   align-items: top;
   gap: 10rem;
 }
-
-/* .graphics__title {
-  color: var(--clr-light);
-  justify-self: center;
-} */
-
-/* .graphics__title h2 {
-  font-size: 4.6rem;
-  line-height: 5rem;
-  font-weight: 700;
-  color: var(--clr-primary);
-  margin-bottom: 5rem;
-}
-
-.graphics__title p {
-  margin-bottom: 3rem;
-  text-align: justify;
-  max-width: 390.33px;
-  font-weight: 300;
-} */
-
-.graphics__image img {
-  width: 100%;
-  display: block;
-  height: auto;
-  max-width: 52rem;
-}
-
-/* .graphics__price p {
-  text-align: left;
-}
-
-.graphics__price p:first-child {
-  margin-top: 6rem;
-  margin-bottom: 0;
-}
-
-.graphics__price span {
-  color: var(--clr-primary);
-  font-weight: 600;
-  font-size: 2.7rem;
-}
-
-.graphics__price p:last-child {
-  font-size: 0.9rem;
-  font-style: italic;
-} */
 
 .social {
   padding: 11rem 0 6rem 0;
@@ -699,7 +629,6 @@ section.service:nth-child(odd) .price p {
   font-weight: 700;
   color: var(--clr-primary);
   margin-bottom: 5rem;
-  /* max-width: 451px; */
 }
 
 .social__title p {
@@ -707,33 +636,6 @@ section.service:nth-child(odd) .price p {
   text-align: justify;
   max-width: 390.33px;
 }
-
-.social__image {
-  position: relative;
-  justify-self: end;
-}
-
-.social__image img:last-child {
-  position: absolute;
-  top: 0;
-  mix-blend-mode: overlay;
-}
-
-/* .social__price p:first-child {
-  margin-top: 6rem;
-  margin-bottom: 0;
-}
-
-.social__price span {
-  color: var(--clr-primary);
-  font-weight: 600;
-  font-size: 2.7rem;
-}
-
-.social__price p:last-child {
-  font-size: 0.9rem;
-  font-style: italic;
-} */
 
 /* Footer */
 
@@ -865,32 +767,12 @@ section.service:nth-child(odd) .service__title p {
     max-width: 100%;
   }
 
-  /* .web__title {
-    text-align: center;
-  }
-
-  .web__title p {
-    max-width: 100%;
-  } */
-
   .price p {
     text-align: center;
   }
 
   section.service:nth-child(odd) .price p {
     text-align: center;
-  }
-
-  /* .web__price p {
-    text-align: center;
-  } */
-
-  .web__image {
-    justify-self: center;
-  }
-
-  .web__image img {
-    width: 100%;
   }
 
   .about-banner__arrow-down {
@@ -901,25 +783,8 @@ section.service:nth-child(odd) .service__title p {
     grid-template-columns: 1fr;
   }
 
-  .graphics__image {
-    order: 2;
-  }
-
-  .graphics__title {
-    order: 1;
-    text-align: center;
-  }
-
   .graphics__title p {
     max-width: 100%;
-  }
-
-  /* .graphics__price p {
-    text-align: center;
-  } */
-
-  .graphics__image {
-    justify-self: center;
   }
 
   .social__content {
@@ -934,15 +799,11 @@ section.service:nth-child(odd) .service__title p {
     max-width: 100%;
   }
 
-  /* .social__price p {
-    text-align: center;
-  } */
-
-  .social__image {
+  .service__image {
     justify-self: center;
   }
 
-  .social__image img {
+  .service__image img {
     width: 100%;
   }
 }
@@ -1091,11 +952,6 @@ section.service:nth-child(odd) .service__title p {
     font-size: 3.2rem;
     line-height: 3.6rem;
   }
-
-  /* .web__title h2 {
-    font-size: 3.2rem;
-    line-height: 3.6rem;
-  } */
 
   .projects__title p {
     font-size: 1.6rem;
